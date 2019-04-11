@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bayar</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+	<link href="css/home.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="images/logo2-12.png" width="200" height="58" alt=""/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="#">Custom</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#">Stock</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#">About Us</a></li>
+            <li class="nav-item"> <a class="nav-link" href="Login.html">Login</a></li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-3">
+      <div class="row">
+			 <div class="col-lg-6">
+          <table class="table table-hover">
+            <thead>
+            <tr>
+              <th colspan="3">
+                <h4>List Produk</h4>
+              </th>
+            </tr>
+            <tr>
+              <th>ID Produk</th>
+              <th>Nama Produk</th>
+              <th>Harga</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            </tbody>
+          </table>
+       </div>
+       <div class="col-lg-6">
+          <form>
+            <h3>Total Transaksi</h3>
+            <p style="font-size: 16pt; color: rgb(0, 160, 255)">Harga</p>
+            <table>
+              <tr>
+                <td colspan="3">
+                  <p>
+                    Silahkan pilih metode pembayaran Anda:
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <th style="padding: 4px; text-align: center; border-right: 2px solid gray; border-bottom: 2px solid gray">
+                  Batal
+                </th>
+                <th style="padding: 4px; text-align: center; border-right: 2px solid gray; border-bottom: 2px solid gray">
+                  Cash
+                </th>
+                <th style="padding: 4px; text-align: center; border-bottom: 2px solid gray">
+                  Cicil
+                </th>
+              </tr>
+              <tr>
+                <td style="padding: 4px; border-right: 2px solid gray">
+                  <input class="btn btn-danger" type="button" onclick="" value="Batalkan Transaksi">
+                </td>
+                <td style="padding: 4px; border-right: 2px solid gray">
+                  <input class="btn btn-success" type="submit" value="Bayar Cash">
+                </td>
+                <td style="padding: 4px">
+                  <input class="btn btn-primary" type="submit" value="Cicil 6x">
+                  <input class="btn btn-primary" type="submit" value="Cicil 10x">
+                  <input class="btn btn-primary" type="submit" value="Cicil 15x">
+                </td>
+              </tr>
+            </table>   
+              </div>
+              </div>
+            </form>
+       </div>
+		</div>
+	</div>
+	<br>
+	<script>
+		var slideidx = 1;
+		showDivs(slideidx);
+
+		function plusDivs(n){
+			showDivs(slideidx += n);
+		}
+
+		function showDivs(n){
+			var i;
+			var x = document.getElementsByClassName("show");
+			if (n > x.length){
+				slideidx = 1;
+			}
+			if (n < 1){
+				slideidx = x.length;
+			}
+			for (i = 0; i < x.length; i++){
+				x[i].style.display = "none";
+			}
+			x[slideidx-1].style.display= "block";
+		}
+	</script>
+        
+<hr>
+    <div class="container text-white bg-dark p-4">
+      <div class="row">
+        <div class="col-6 col-md-8 col-lg-7">
+          <div class="row text-center">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-12">
+              <ul class="list-unstyled">
+                <li class="btn-link"> <a>Link anchor</a> </li>
+                <li class="btn-link"> <a>Link anchor</a> </li>
+                <li class="btn-link"> <a>Link anchor</a> </li>
+                <li class="btn-link"> <a>Link anchor</a> </li>
+                <li class="btn-link"> <a>Link anchor</a> </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-12">
+              <ul class="list-unstyled">
+                <li class="btn-link"> <a>Link anchor</a> </li>
+                <li class="btn-link"> <a>Link anchor</a> </li>
+                <li class="btn-link"> <a>Link anchor</a> </li>
+                <li class="btn-link"> <a>Link anchor</a> </li>
+                <li class="btn-link"> <a>Link anchor</a> </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-12">
+              <ul class="list-unstyled">
+                <li class="btn-link"> <a>Link anchor</a> </li>
+                <li class="btn-link"> <a>Link anchor</a> </li>
+                <li class="btn-link"> <a>Link anchor</a> </li>
+                <li class="btn-link"> <a>Link anchor</a> </li>
+                <li class="btn-link"> <a>Link anchor</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-5 col-6">
+          <address>
+          <strong>MyStoreFront, Inc.</strong><br>
+MEUBELI<br>
+Quitman, WA, 99110-0219<br>
+<abbr title="Phone">P:</abbr> (123) 456-7890
+          </address>
+          <address>
+          <strong>CEO</strong><br>
+          <a href="mailto:#">ceo@gmail.com</a>
+          </address>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © Meubeli. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
+  </body>
+</html>
